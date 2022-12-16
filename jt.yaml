@@ -1,0 +1,34 @@
+uvmf:
+ interfaces:
+   "JTAG_intf":
+     clock: "clock"
+     reset: "reset"
+     reset_assertion_level: "False"
+     #veloce_ready: "True"
+   ports:
+    - name: 'TCK'
+      width: []
+      dir: "input"
+    - name: "TMS"
+      width: []
+      dir: "input"
+    - name: "TDI"
+      width: []
+      dir: "input"
+    - name: "TDO"
+      width: []
+      dir: "output"
+   transaction_vars:
+    - name: "TDI"
+      type: "bit"
+      isrand: "False"
+    - name: "TDO"
+      type: "bit"
+    - name: "TCK"
+      type: "bit"
+      isrand: "False"
+    - name: "TMS"
+      type: "bit"
+      isrand: "False"
+
+      
